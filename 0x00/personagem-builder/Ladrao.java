@@ -1,5 +1,3 @@
-import com.ciandt.week10.project50.personagem.TipoPersonagem;
-
 public class Ladrao extends Personagem {
     public Ladrao(String nome, int inteligencia, int forca, int vigor, int resistencia, int destreza) throws Exception {
         super(nome, TipoPersonagem.LADRAO, inteligencia, forca, vigor, resistencia, destreza);

@@ -1,5 +1,3 @@
-import com.ciandt.week10.project50.personagem.TipoPersonagem;
-
 public abstract class Personagem {
     private String nome;
     private TipoPersonagem tipo;

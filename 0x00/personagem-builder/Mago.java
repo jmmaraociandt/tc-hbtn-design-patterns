@@ -1,5 +1,3 @@
-import com.ciandt.week10.project50.personagem.TipoPersonagem;
-
 public class Mago extends Personagem {
     public Mago(String nome, int inteligencia, int forca, int vigor, int resistencia, int destreza) throws Exception {
         super(nome, TipoPersonagem.MAGO, inteligencia, forca, vigor, resistencia, destreza);
