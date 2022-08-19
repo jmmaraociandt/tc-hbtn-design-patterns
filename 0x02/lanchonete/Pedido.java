@@ -14,15 +14,15 @@ public class Pedido {
 
     @Override
     public String toString() {
-        String itensDentroCaixaString = "  Fora da caixa:";
-        String itensForaCaixaString = "  Dentro da caixa:";
+        String itensDentroCaixaString = "\tFora da caixa:";
+        String itensForaCaixaString = "\tDentro da caixa:";
 
         for (ItemPedido itemPedido : itensDentroCaixa) {
-            itensDentroCaixaString += "\n   - " + itemPedido.getTipo() + " " + itemPedido.getNome();
+            itensDentroCaixaString += "\n\t\t- " + itemPedido.getTipo() + " " + itemPedido.getNome();
         }
 
         for (ItemPedido itemPedido : itensForaCaixa) {
-            itensForaCaixaString += "\n   - " + itemPedido.getTipo() + " " + itemPedido.getNome();
+            itensForaCaixaString += "\n\t\t- " + itemPedido.getTipo() + " " + itemPedido.getNome();
         }
 
         return itensForaCaixaString + "\n" + itensDentroCaixaString + "\n";
