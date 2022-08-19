@@ -29,7 +29,7 @@ public class Impressao {
         return "total de paginas: " + paginasTotais +
                 ", total coloridas: " + paginasColoridas +
                 ", total preto e branco: " + (paginasTotais - paginasColoridas) +
-                ", " + (ehFrenteVerso ? "frente e verso" : "frente") +
+                ", " + (ehFrenteVerso ? "frente e verso" : "frente apenas") +
                 ". total: R$ " + String.format("%.2f", calcularTotal());
     }
 }
