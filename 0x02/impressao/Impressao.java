@@ -30,6 +30,6 @@ public class Impressao {
                 ", total coloridas: " + paginasColoridas +
                 ", total preto e branco: " + (paginasTotais - paginasColoridas) +
                 ", " + (ehFrenteVerso ? "frente e verso" : "frente") +
-                " . total: R$ " + String.format("%.2f", calcularTotal());
+                ". total: R$ " + String.format("%.2f", calcularTotal());
     }
 }
