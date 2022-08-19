@@ -1,9 +1,9 @@
 public class NaveEspacialDecorator extends NaveEspacial {
-    private NaveEspacial shipToDecorate;
+    private NaveEspacial naveDecorada;
 
-    public NaveEspacialDecorator(NaveEspacial shipToDecorate) {
-        super(shipToDecorate.getSaude(), shipToDecorate.getAtaque());
-        this.shipToDecorate = shipToDecorate;
+    public NaveEspacialDecorator(NaveEspacial naveDecorada) {
+        super(naveDecorada.getSaude(), naveDecorada.getAtaque());
+        this.naveDecorada = naveDecorada;
     }
 
     @Override
