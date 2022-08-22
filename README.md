@@ -11,3 +11,5 @@ Java Development Kit used: [11](https://www.oracle.com/java/technologies/downloa
 - Project 52: [Design pattern part 3 - Builder and Factory](https://github.com/jmmaraociandt/tc-hbtn-design-patterns/tree/main/0x02)
 
 - Project 53: [Design pattern part 4 - Decorator and Adapter](https://github.com/jmmaraociandt/tc-hbtn-design-patterns/tree/main/0x03)
+
+- Project 54: [Hexagonal architecture](https://github.com/jmmaraociandt/tc-hbtn-design-patterns/tree/main/0x04)
