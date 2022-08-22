@@ -1,0 +1,15 @@
+A Arquitetura Hexagonal, assim como a Arquitetura Limpa, tem como objetivo o desenvolvimento de sistemas que favorecem aspectos como reusabilidade do código, alta coesão, baixo acoplamento, independência de tecnologia e facilidade de execução de testes. A Arquitetura Hexagonal se divide em dois grandes grupos: classe domínio (relacionada com a regra de negócio do sistema) e classe relacionada com infraestrutura, tecnologia e integração com sistemas externos (como banco de dados).
+Esta divisão permite que o domínio não dependa de classes relacionadas a aplicação (como infraestrutura, tecnologias e sistemas externos), isso favorece o desacoplamento entre as duas classes. A comunicação entre estes grupos acontecem com o auxílio de portas e adaptadores. A porta está relacionada às interfaces para comunicação com as classes de domínio, podendo ser de entrada (comunicação de fora para dentro - classe externa necessita de algum método do domínio) ou de saída (comunicação de dentro para fora - classe de domínio precisa chamar um método de classe externa).
+Como as portas independem de tecnologia, é necessário o uso de adaptadores para integrar a classe domínio com sistemas externos, uma vez que estes muitas vezes possuem tecnologias distintas. Desta forma os adaptadores têm como função, receber chamadas internas e direcionar para o sistema externo, e vice-versa.
+Dentre as diversas vantagens da arquitetura hexagonal, podem ser citadas:
+- Solução de Serviços Externos Independentes
+- Possibilita adiar algumas decisões técnicas
+- Criação e substituição de adaptadores
+- Fácil de testar a aplicação
+- Tecnologias fáceis de trocar
+Quanto às desvantagens podem ser listado os seguintes aspectos:
+- Complexidade adicional (construção de mais camadas)
+- Custo de criação e manutenção
+- Não há orientação sobre como organizar o código (diretórios, camadas)
+Tanto a Arquitetura Limpa quanto a Hexagonal tem como objetivo encapsular a lógica da regra de negócio, a diferença está na aplicabilidade de camadas, uma vez que a Arquitetura Hexagonal trabalha com um núcleo (domínio) envolvido por camadas externas (portas e adaptadores).
+Uma frase que escuto muito da faculdade é "no silver bullet" (não há bala de prata), e acredito que este conceito aplica-se muito bem na escolha de arquitetura. Não tem como generalizar a escolha de uma arquitetura sem analisar o sistema todo, uma vez que cada aplicação tem suas especificidades e funcionalidades.
